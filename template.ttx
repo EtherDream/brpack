@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.62">
+
+  <head>
+    <tableVersion value="1.0"/>
+    <fontRevision value="0.0"/>
+    <checkSumAdjustment value="0"/>
+    <magicNumber value="0x5f0f3cf5"/>
+    <flags value="00000000 00000000"/>
+    <unitsPerEm value="1024"/>
+    <!-- 0 -->
+    <created value="Fri Jan  1 00:00:00 1904"/>
+    <modified value="Fri Jan  1 00:00:00 1904"/>
+    <xMin value="0"/>
+    <yMin value="0"/>
+    <xMax value="0"/>
+    <yMax value="0"/>
+    <macStyle value="00000000 00000000"/>
+    <lowestRecPPEM value="0"/>
+    <fontDirectionHint value="0"/>
+    <indexToLocFormat value="0"/>
+    <glyphDataFormat value="0"/>
+  </head>
+
+  <hhea>
+    <tableVersion value="0x00010000"/>
+    <ascent value="0"/>
+    <descent value="0"/>
+    <lineGap value="0"/>
+    <advanceWidthMax value="0"/>
+    <minLeftSideBearing value="0"/>
+    <minRightSideBearing value="0"/>
+    <xMaxExtent value="0"/>
+    <caretSlopeRise value="0"/>
+    <caretSlopeRun value="0"/>
+    <caretOffset value="0"/>
+    <reserved0 value="0"/>
+    <reserved1 value="0"/>
+    <reserved2 value="0"/>
+    <reserved3 value="0"/>
+    <metricDataFormat value="0"/>
+    <numberOfHMetrics value="0"/>
+  </hhea>
+
+  <maxp>
+    <!-- Most of this table will be recalculated by the compiler -->
+    <tableVersion value="0x5000"/>
+  </maxp>
+
+  <OS_2>
+    <!-- The fields 'usFirstCharIndex' and 'usLastCharIndex'
+         will be recalculated by the compiler -->
+    <version value="0"/>
+    <xAvgCharWidth value="0"/>
+    <usWeightClass value="0"/>
+    <usWidthClass value="0"/>
+    <fsType value="00000000 00000000"/>
+    <ySubscriptXSize value="0"/>
+    <ySubscriptYSize value="0"/>
+    <ySubscriptXOffset value="0"/>
+    <ySubscriptYOffset value="0"/>
+    <ySuperscriptXSize value="0"/>
+    <ySuperscriptYSize value="0"/>
+    <ySuperscriptXOffset value="0"/>
+    <ySuperscriptYOffset value="0"/>
+    <yStrikeoutSize value="0"/>
+    <yStrikeoutPosition value="0"/>
+    <sFamilyClass value="0"/>
+    <panose>
+      <bFamilyType value="0"/>
+      <bSerifStyle value="0"/>
+      <bWeight value="0"/>
+      <bProportion value="0"/>
+      <bContrast value="0"/>
+      <bStrokeVariation value="0"/>
+      <bArmStyle value="0"/>
+      <bLetterForm value="0"/>
+      <bMidline value="0"/>
+      <bXHeight value="0"/>
+    </panose>
+    <ulUnicodeRange1 value="00000000 00000000 00000000 00000000"/>
+    <ulUnicodeRange2 value="00000000 00000000 00000000 00000000"/>
+    <ulUnicodeRange3 value="00000000 00000000 00000000 00000000"/>
+    <ulUnicodeRange4 value="00000000 00000000 00000000 00000000"/>
+    <achVendID value=""/>
+    <fsSelection value="00000000 00000000"/>
+    <usFirstCharIndex value="0"/>
+    <usLastCharIndex value="0"/>
+    <sTypoAscender value="0"/>
+    <sTypoDescender value="0"/>
+    <sTypoLineGap value="0"/>
+    <usWinAscent value="0"/>
+    <usWinDescent value="0"/>
+  </OS_2>
+
+  <hmtx>
+    <mtx name=".notdef" width="0" lsb="0"/>
+  </hmtx>
+
+  <cmap>
+    <tableVersion version="0"/>
+    <cmap_format_4 platformID="0" platEncID="0" language="0">
+      <!-- <map code="0x30" name="glyf0"/> -->
+    </cmap_format_4>
+  </cmap>
+
+  <loca>
+    <!-- The 'loca' table will be calculated by the compiler -->
+  </loca>
+
+  <GlyphOrder>
+    <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
+    <GlyphID id="0" name=".notdef"/>
+  </GlyphOrder>
+
+  <glyf>
+    <!-- The xMin, yMin, xMax and yMax values
+         will be recalculated by the compiler. -->
+    <TTGlyph name=".notdef">
+      <contour>
+        <pt x="0" y="0" on="0"/>
+      </contour>
+      <instructions/>
+    </TTGlyph>
+  </glyf>
+
+  <name>
+  </name>
+
+  <post>
+    <formatType value="1.0"/>
+    <italicAngle value="0.0"/>
+    <underlinePosition value="0"/>
+    <underlineThickness value="0"/>
+    <isFixedPitch value="0"/>
+    <minMemType42 value="0"/>
+    <maxMemType42 value="0"/>
+    <minMemType1 value="0"/>
+    <maxMemType1 value="0"/>
+  </post>
+
+  <CBDT>
+    <header version="3.0"/>
+    <strikedata index="0">
+      <cbdt_bitmap_format_17 name="glyf0">
+        <SmallGlyphMetrics>
+          <height value="255"/>
+          <width value="255"/>
+          <BearingX value="0"/>
+          <BearingY value="1"/>
+          <Advance value="255"/>
+        </SmallGlyphMetrics>
+        <rawimagedata>
+        </rawimagedata>
+      </cbdt_bitmap_format_17>
+    </strikedata>
+  </CBDT>
+
+  <CBLC>
+    <header version="3.0"/>
+    <strike index="0">
+      <bitmapSizeTable>
+        <sbitLineMetrics direction="hori">
+          <ascender value="0"/>
+          <descender value="0"/>
+          <widthMax value="0"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <sbitLineMetrics direction="vert">
+          <ascender value="0"/>
+          <descender value="0"/>
+          <widthMax value="0"/>
+          <caretSlopeNumerator value="0"/>
+          <caretSlopeDenominator value="0"/>
+          <caretOffset value="0"/>
+          <minOriginSB value="0"/>
+          <minAdvanceSB value="0"/>
+          <maxBeforeBL value="0"/>
+          <minAfterBL value="0"/>
+          <pad1 value="0"/>
+          <pad2 value="0"/>
+        </sbitLineMetrics>
+        <colorRef value="0"/>
+        <startGlyphIndex value="0"/>
+        <endGlyphIndex value="0"/>
+        <!-- canvas font size -->
+        <ppemX value="9"/>
+        <ppemY value="9"/>
+        <bitDepth value="32"/>
+        <flags value="1"/>
+      </bitmapSizeTable>
+      <eblc_index_sub_table_1 imageFormat="17" firstGlyphIndex="0" lastGlyphIndex="0">
+      </eblc_index_sub_table_1>
+    </strike>
+  </CBLC>
+
+</ttFont>
