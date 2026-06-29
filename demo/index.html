@@ -102,10 +102,12 @@
     function main() {
       // '123' maps to the glyphs in the font file
       loadFile('test.txt', '123', function(data) {
+        data = data.trim();
         txtResult.value = data;
 
         // Verify decoded output against the plain-text source.
         loadFileFromPlain('test.txt?verify', function(exp) {
+          exp = exp.trim();
           txtVerify.textContent = exp === data;
         });
       });
