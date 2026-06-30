@@ -124,9 +124,6 @@ def main():
 
     template_bitmap = font['CBDT'].strikeData[0]['glyf0']
 
-    if args.png_dir:
-        Path(args.png_dir).mkdir(parents=True, exist_ok=True)
-
     glyph_order = font.getGlyphOrder()
 
     for i in range(image_num):
@@ -140,10 +137,6 @@ def main():
         bitmap = copy.deepcopy(template_bitmap)
         bitmap.imageData = png_data
 
-        if args.png_dir:
-            png_path = Path(args.png_dir) / f'0x{ord(args.chars[i]):04x}.png'
-            png_path.write_bytes(png_data)
-
         font['CBDT'].strikeData[0][name] = bitmap
         font['CBLC'].strikes[0].indexSubTables[0].names.append(name)
         font['hmtx'].metrics[name] = (0, 0)
@@ -151,6 +144,10 @@ def main():
 
         code = ord(args.chars[i])
         font['cmap'].tables[0].cmap[code] = name
+
+        if args.png_dir:
+            png_path = Path(args.png_dir) / f'0x{code:04x}.png'
+            png_path.write_bytes(png_data)
 
         glyph_order.append(name)
 
