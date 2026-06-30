@@ -12,7 +12,7 @@ import zlib
 import sys
 
 # Must match JS decoder's lastIndexOf(99)
-END_MARK = bytes([99])
+END_MARK = 99
 
 IMG_WIDTH = 255
 IMG_HEIGHT = 255
@@ -99,13 +99,14 @@ def main():
     )
     args = parser.parse_args()
 
-    raw = Path(args.infile).read_bytes()
+    file_data = Path(args.infile).read_bytes()
 
-    # Pad so that after appending the 1-byte end marker,
-    # the total length is a multiple of 3 (one RGB pixel).
-    pad_len = (2 - (len(raw) % 3)) % 3
-    raw += b' ' * pad_len
-    in_buf = raw + END_MARK
+    # Pad with spaces so that the total length
+    # (data + padding + END_MARK) is divisible by 3.
+    in_buf = bytearray(file_data)
+    while (len(in_buf) + 1) % 3 != 0:
+        in_buf.append(0x20)
+    in_buf.append(END_MARK)
 
     pixel_num = len(in_buf) // 3
     image_num = math.ceil(pixel_num / IMG_PIXELS)
@@ -169,7 +170,7 @@ def main():
 
     if args.br:
         pure_brotli = brotli.compress(
-            raw,
+            file_data,
             quality=11,
             mode=brotli.MODE_TEXT,
             lgwin=24,
