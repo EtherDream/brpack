@@ -85,7 +85,7 @@ The JavaScript side must also know which characters were used. For example, "123
 
 ## Size Optimization
 
-Glyphs are rendered vertically on the canvas rather than horizontally so the byte stream stays sequential across images and compresses better.
+Glyphs are rendered top-to-bottom on the canvas (one per row) rather than left-to-right, so the byte stream stays sequential across images and compresses better.
 
 To squeeze out every byte, nonessential font fields are zeroed out where possible, including creation and modification timestamps. This removes unnecessary variation and can slightly improve compressibility. See [template.ttx](template.ttx) for details.
 
