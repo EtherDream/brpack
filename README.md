@@ -14,11 +14,20 @@ https://etherdream.github.io/brpack
 
 Firefox 147+ and Safari 18.4+ support Brotli decompression via the [DecompressionStream API](https://caniuse.com/mdn-api_decompressionstream_decompressionstream_brotli), but Chrome does not yet support it. Use Chrome to see the WOFF2 path.
 
-In the demo, a 412,226-byte text file compresses to 146,749 bytes with Brotli and 148,944 bytes as WOFF2 — about 1.5% larger than the raw Brotli payload.
-
 ![brpack demo showing characters 1, 2, 3 rendered as color glyph images](https://github.com/user-attachments/assets/2a0a312e-8c05-4e5d-a3a5-a648f4eb9b1d)
 
 > As shown, characters 1, 2, and 3 are rendered as images.
+
+In the demo, compression results for a text file:
+
+| Format        | Size      | vs Raw |
+|---------------|-----------|--------|
+| Raw           | 412,226 B |        |
+| Brotli        | 146,749 B | −64.4% |
+| WOFF2         | 148,944 B | −63.9% |
+| gzip (zopfli) | 174,493 B | −57.7% |
+
+WOFF2 is only ~1.5% larger than raw Brotli, but still ~15% smaller than the best gzip.
 
 ## How It Works
 
